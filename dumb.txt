@@ -1,0 +1,22 @@
+You’ll have endpoints:
+
+POST http://localhost:8000/api/login — form field email
+
+POST http://localhost:8000/api/conversation — multipart form file field file (upload mp3)
+
+POST http://localhost:8000/api/image — multipart image file field file
+
+POST http://localhost:8000/api/summarize — either file (multipart file) OR form field url (string)
+
+
+
+
+uvicorn app:app --reload --port 8000
+
+
+
+
+cd backend
+python -m venv venv
+source venv/bin/activate     # Windows: venv\Scripts\activate
+pip install -r requirements.txt
