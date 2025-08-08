@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 from typing import List
 from diarizer import diarize_file
+import google.generativeai as genai
 from utils import extract_all_text_from_path, transcribe_audio_bytes_with_gemini, analyze_text_with_gemini, upload_file_bytes_to_gemini_bytes, fetch_url_text
 
 load_dotenv()
